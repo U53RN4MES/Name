@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Heart Animation</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      background-color: black;
+      background: black;
       height: 100%;
       width: 100%;
       overflow: hidden;
@@ -16,19 +16,14 @@
     video {
       width: 100vw;
       height: 100vh;
-      object-fit: cover;
+      object-fit: contain;  /* <-- change from cover to contain */
+      background-color: black;
       display: block;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
-  <video 
-    src="heart.mp4" 
-    autoplay 
-    loop 
-    muted 
-    playsinline 
-    webkit-playsinline 
-  ></video>
+  <video src="heart.mp4" autoplay loop muted playsinline webkit-playsinline></video>
 </body>
 </html>
